@@ -1,1 +1,1 @@
-# DCGAN-192-192
+# DCGAN(pytorch)-192
