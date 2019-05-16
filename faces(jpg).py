@@ -20,7 +20,7 @@ def detect(filename, cascade_file = "lbpcascade_animeface.xml"):
     
     for i, (x, y, w, h) in enumerate(faces):
         face = image[y: y + h, x:x + w, :] 
-        face = cv2.resize(face, (192, 192)) 
+        face = cv2.resize(face, (256, 256)) 
         save_filename = '%s-%d.png' % (os.path.basename(filename).split('.')[0], i)
         cv2.imwrite("faces/" + save_filename, face)
 
